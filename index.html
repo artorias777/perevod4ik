@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Translate API demo</title>
+    <!-- jQuery -->
+    <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS (Bootstrap v4 Aplha) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+    <!-- Style -->
+    <style>
+        body {
+            padding-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-group row">
+            <div class="col-xs-10">
+                <textarea  class="form-control" type="text" value="" id="text" placeholder="Введите текст для перевода"></textarea>
+            </div>
+            <div class="col-xs-2">
+                <button style="height: 58px;" id="button" class="btn btn-info">Перевести</button>
+            </div>
+        </div>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Слово</th>
+                <th>Перевод</th>
+            </tr>
+            </thead>
+            <tbody id="table">
+            <tr>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
